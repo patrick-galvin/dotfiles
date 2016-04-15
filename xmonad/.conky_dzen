@@ -1,0 +1,11 @@
+background yes
+out_to_console yes
+out_to_x no
+# Update interval in seconds
+update_interval 5
+use_spacer right
+use_xft yes
+override_utf8_locale yes
+
+TEXT
+^fg(\#af8700) ${hwmon 0 temp 1}C ${battery} ^fg(\#93a1a1) ^i(/home/$USER/.xmonad/dzen2/icons/cpu.xbm) ^fg(\#93a1a1)${cpu}%  ^i(/home/$USER/.xmonad/dzen2/icons/mem.xbm) ^fg(\#93a1a1)${memperc}% ^fg(\#93a1a1) ^i(/home/$USER/.xmonad/dzen2/icons/clock.xbm) ^fg(\#93a1a1) ${time %d %m %Y} ^fg(\#b93a1a1) ${time %R}
